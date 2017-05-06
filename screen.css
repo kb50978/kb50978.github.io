@@ -1,5 +1,6 @@
 #wrapper {background-color: chartreuse; color: blue; font-family: cooper, sans-serif;}
 nav {}
 ul {display: flex; flex-wrap: wrap;}
-li {margin: 1em;}
-        
+li {margin: 1em; font-family: arial black}
+p {font-family: arial black}
+img {width: 200px}
