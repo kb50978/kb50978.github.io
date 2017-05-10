@@ -1,6 +1,7 @@
-#wrapper {background-color: chartreuse; color: blue; font-family: cooper, sans-serif;}
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash|Yrsa');
+#wrapper {background-color: bisque; color: blue; font-family: ravi prakash, cooper, sans-serif;}
 nav {}
 ul {display: flex; flex-wrap: wrap;}
-li {margin: 1em; font-family: arial black}
-p {font-family: arial black}
+li {margin: 1em; font-family: yrsa, arial black, sans-serif}
+p {font-family: yrsa, arial black, sans-serif}
 img {width: 200px}
