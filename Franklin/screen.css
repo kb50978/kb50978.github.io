@@ -19,33 +19,60 @@ the HTML5 semantic elements */
 }
 
 body {
-    margin: 0; /* remove any margin from body */
-    padding: 0; /* ditto for padding */
-    background-color: salmon;
-    font-size: 20px;
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ background-color: salmon;
+ font-size: 20px;
+ font-family: helvetica, arial, sans-serif;
 }
 main {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center; /*center aligned content*/
+ background-image: url(sunny-winter.jpg);
+ background-size: cover;
 }
-ul {
-    display: flex;
-    list-style: none;    
+nav ul {
+    display: flex; /*horizontal nav bar*/
+    list-style: none;
+    padding: none;
 }
-li {padding: 1em;
+nav li {
+    padding: .5em
 }
 nav {
-    position: fixed;
+    position: fixed; /*nav bar at the bottom*/
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #A6D8DB;
 }
-h1 {
-    text-align: right;
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
 }
 .title h1 + h1 {
     text-align: right;
+    margin-top: -.7em;
+}
+footer {
+    margin-bottom: 4em;
+    background-color: #E7EF61;
+}
+#highlo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: column center;
+       
+}
+#highlo p {
+    width: 100%;
+}
+#highlo span {
+    display: flex;
+}
+.hourly {
+    display: none;
 }
 h1,
 h2,
@@ -54,18 +81,26 @@ h4,
 h5,
 h6 {
     font-family: Sansita, arial, generic-family;
-
-}
-header,
-footer,
-nav {
-    background-color: #A6D8DB;
 }
 header {
     margin-top: -1.5em;
+    margin-bottom: -1em;
+    background-color: #A6D8DB;
 }
-nav a:link {
-    text-decoration: none;
-    color: #47556F;
+
+.overview {
+    background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+border-radius: 5px;
 }
-footer {margin-bottom: 3em}
+.cur_conditions { 
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
