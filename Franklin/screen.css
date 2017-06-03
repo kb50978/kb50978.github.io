@@ -36,7 +36,7 @@ nav ul {
     display: flex; /*horizontal nav bar*/
     justify-content: center;
     list-style: none;
-    padding: none;
+    
 }
 nav li {
     padding: .5em
@@ -53,9 +53,9 @@ nav a:link {
     text-decoration: none;
     color: #47556F;
 }
-.title h1 + h1 {
-    text-align: right;
-    margin-top: -.7em;
+.title h1 {
+    text-align: center;
+    
 }
 footer {
     margin-bottom: 4em;
@@ -100,6 +100,7 @@ header img {
 margin: .2em auto;
 border: 1px solid;
 border-radius: 5px;
+    padding: 1em;
 }
 .cur_conditions { 
     display: flex;
@@ -116,7 +117,7 @@ border-radius: 5px;
     transform: rotate(25deg);
     display: inline-block;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   nav {
     position: fixed; /*nav bar at the top*/
     bottom: 85%;
@@ -139,13 +140,29 @@ border-radius: 5px;
         margin-top: 8em;
         display: flex;
         flex-flow: wrap;
+        align-items: stretch;
+        background-image: none;
     }
+    
     .overview{
         padding: 1em;
+        background-image: url(sunny-winter.jpg);
+    
+        width: 40%;
+        
     }
+    .overview div {
+        background-color: rgba(200,200,200,.6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 5px;
+        width: inherit;
+        padding: inherit;
+        
+    }
+    
     .cur_conditions {
         width: 30%;
-        height: 100%;
         order: -1;
         
     }
