@@ -23,17 +23,20 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        $.get('http://api.wunderground.com/api/a7b44a8b7fa643b8/geolookup/q/' + lat + ',' + lon + '.json', function() {
-       
-    });
-        
-      
+        url: "https://api.wunderground.com/api/a7b44a8b7fa643b8/geolookup/q/" + lat + "," + long + ".json", function(data){
+        $("#status").text({
+            'city' : '#',
+    }); 
+    }, "jsonp");
+
+
+
+
 
 
       $("#cover").fadeOut(250);
     }
            });
-      
 
   }
 
