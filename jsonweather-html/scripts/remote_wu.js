@@ -23,11 +23,15 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        url: "https://api.wunderground.com/api/a7b44a8b7fa643b8/geolookup/q/" + lat + "," + long + ".json", function(data){
-        $("#status").text({
-            'city' : '#',
-    }); 
-    }, "jsonp");
+        url: "https://api.wunderground.com/api/a7b44a8b7fa643b8/geolookup/q/" + lat + "," + long + ".json", dataType : "jsonp",
+        success : function(parsed_json) {
+            var location = parsed_json['location']['city'];
+            var temp_f = parsed_json['current_observation']['temp_f'];
+            }
+        $('#cityDisplay').append()
+      });
+     
+   
 
 
 
@@ -35,10 +39,10 @@ $(function () {
 
 
       $("#cover").fadeOut(250);
-    }
-           });
+    
+       });   
 
-  }
+  
 
   // A function for changing a string to TitleCase
   function toTitleCase(str){

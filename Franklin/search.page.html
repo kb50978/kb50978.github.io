@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frankin | Feeling Lucky | Weather, Forecast</title>
+        <meta name="description" content="Short Description of the page.">
+        <meta name="viewport" content="width=device-width">
+        <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    <body>
+        <header>
+            <img src="feelingLucky.png" alt="Logo">
+            <p>Lucky weather forecast</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" title="Go to home page">Home</a></li>
+                <li><a href="franklin.page.html" title="Go to Franklin page">Franklin</a></li>
+                <li><a href="greenville.html" title="Go to Greenville">Greenville</a></li>
+                <li><a href="#" title="Go to Springfield">Springfield</a></li>
+                <li><a href="#" title="Search box">Search</a></li>
+            </ul>
+        </nav>
+        <main>
+           
+            <section class="cur_conditions">
+                 <form method="get" action="//autocomplete.wunderground.com/aq" id="searchform">
+      <input type="search" name="query" id="query">
+      <input type="submit" name="submit" value="Search" id="send">
+    </form>
+    <!--    Display the search results here  -->
+    <section id="searchResults">
+      <h2>Search results</h2>
+    </section>
+            </section>
+            
+			
+        </main>
+        <footer>
+            &copy;2017 Kyle Buchanan
+            <a href="">Home</a>
+            <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+        <script src="/jquery.js"></script>
+        </footer>
+    </body>
+</html>
