@@ -1,10 +1,10 @@
 var selectLink = "";
 var jsonData = null;
 //Gets the links ready
-$(".link").ready(function () {
+$(document).ready(function () {
 	$("title").html("ACME Home");
 	$.ajax({
-		url: "https://kb50978.github.io/acme/js/acme.json",
+		url: "js/acme.json",
 		dataType: "json",
 		success: function (data) {
 			console.log(data);
@@ -24,6 +24,7 @@ $("nav").on("click", "a", function () {
 	console.log("the link is:" + link);
 	if (link !== "Home") {
 		$("#main_content").hide();
+        $("#displaySction").show();
 		
 		
 		$.ajax({
@@ -48,8 +49,7 @@ $("nav").on("click", "a", function () {
 			
 		});
 	} else {
-		$("#rocket").show();
-		$("#lower-half").show();
+		$("#main_content").show();
 		$("#productTitle").hide();
 		$("#prod").hide();
 		$("title").html("ACME Home");

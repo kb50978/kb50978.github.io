@@ -1,4 +1,13 @@
 {
+    "nav":{
+        "name": "nav",
+        "link0":[ "Home"], 
+        "link1":[ "Anvils"], 
+        "link2":[ "Explosives"],
+        "link3":[ "Decoys"],
+        "link4":[ "Traps"]
+        
+    },
     "Anvils":{
       "name": "Anvil",
       "path": "images/products/anvil.png",
