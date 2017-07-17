@@ -5,8 +5,8 @@
       <meta charset="UTF-8">
       <title>ACME Home</title>
       <meta name="viewport" content="width=device-width">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
       <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/4EF3C0A0-317A-284C-A6DA-1ED69D1A99C5/main.js" charset="UTF-8"></script>
     </head>
 
     <body>
@@ -14,16 +14,19 @@
         <header id="page-header">
           <img src="images/site/logo.png">
         </header>
-        <nav id="page-nav">
-            <ul>
-                <li><a href="acme.html">Home</a></li>
-                <li><a href="anvils.html">Anvils</a></li>
-                <li><a href="explosives.html">Explosives</a></li>
-                <li><a href="decoys.html">Decoys</a></li>
-                <li><a href="traps.html">Traps</a></li>
+        <nav id="nav">
+            <ul id="nav-items">
+                <li id="links1"></li>
+                <li id="links2"></li>
+                <li id="links3"></li>
+                <li id="links4"></li>
+                <li id="links5"></li>
+               
             </ul>
         </nav>
+          
         <main id="page-main">
+            <article id="main_content">
             <h1>Welcome to Acme!</h1>
           <section id="top">
               
@@ -55,14 +58,30 @@
                     </ol>
                 </div>
             </section>
+                </article>
+	<!--THIS IS THE PRODUCT PAGE-->
+		<h2 id="productTitle"></h2>
+		<section id="prod">
+			<section id="productImage"></section>
+		<div id="productInfo">
+			
+			<section id="prodSummary">
+				<p id="summary"></p>
+				<p id="made"></p>
+				<p id="review"></p>
+				<p id="price"></p>
+			</section>
+			</div>
+		</section>
         </main>
         <footer id="page-footer">
             <div id="footer-content">
                 2017 ACME Inc. All rights reserved 
                 <p>All images used are believed to be in "Fair Use", Please notify the author if any are not and they be removed.</p>
             </div>
-            <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
-            <script src="#"></script>
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="acme.js"></script>
         </footer>
 
       </div>
